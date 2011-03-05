@@ -1,0 +1,18 @@
+LOAD 1 image0.pbm
+FILTRE 1 -sobel
+SAVE 1 test0
+CLOSE 1
+LOAD 1 image1.pgm
+FILTRE 1 -sobel
+SAVE 1 test1
+CLOSE 1
+LOAD 1 image2.ppm
+FILTRE 1 -sobel
+SAVE 1 test2
+CLOSE 1
+LOAD 1 image3.pnm
+FILTRE 1 -sobel
+SAVE 1 test3
+CLOSE 1
+FIN
+

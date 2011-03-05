@@ -1,0 +1,21 @@
+LOAD 0 image0.pbm
+LOAD 1 image1.pgm
+INIT 2
+LOAD 2 image2.ppm
+LOAD 3 image3.pnm
+INIT a
+INIT 1 a
+INIT 1 2
+INIT
+INIT 0
+INIT 1
+INIT 2
+INIT 4
+INIT 3
+CLOSE 0
+CLOSE 1
+CLOSE 2
+CLOSE 3
+FIN
+
+

@@ -1,0 +1,4 @@
+LOAD 1 image1.pgm
+CREATE 2 10 10
+CREATE 3 1
+

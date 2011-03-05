@@ -1,0 +1,18 @@
+LOAD 1 image0.pbm
+LOAD 2 image1.pgm
+LOAD 3 image2.ppm
+LOAD 4 image3.pnm
+CUT 1 102 65 176 116
+CUT 2 244 87 446 308
+CUT 3 79 107 349 323
+CUT 4 114 30 229 209
+SAVE 1 test1.pnm
+SAVE 2 test2.pnm
+SAVE 3 test3.pnm
+SAVE 4 test4.pnm
+CLOSE 1
+CLOSE 2
+CLOSE 3
+CLOSE 4
+FIN
+

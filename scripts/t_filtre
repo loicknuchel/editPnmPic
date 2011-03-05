@@ -1,0 +1,6 @@
+LOAD 1 image2.ppm
+FILTRE 1 -f1 3 3 000001000
+SAVE 1 test1
+CLOSE 1
+FIN
+

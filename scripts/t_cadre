@@ -1,0 +1,14 @@
+LOAD 1 image0.pbm
+LOAD 2 image1.pgm
+LOAD 3 image2.ppm
+LOAD 4 image3.pnm
+FRAME 1 1 1 234 350 255 0 0
+FRAME 2 1 1 495 350 255 0 0
+FRAME 3 1 1 512 342 255 0 0
+FRAME 4 1 1 263 350 255 0 0
+SAVE 1 test1.pnm
+SAVE 2 test2.pnm
+SAVE 3 test3.pnm
+SAVE 4 test4.pnm
+
+

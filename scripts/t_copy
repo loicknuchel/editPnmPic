@@ -1,0 +1,17 @@
+LOAD 1 image0.pbm
+LOAD 2 image2.ppm
+CREATE 3 1
+CREATE 4 2
+COPY 4 1
+COPY f
+COPY
+COPY 4 2
+COPY 2 1
+COPY 3 1 2
+COPY 5 3
+COPY 3 5
+SAVE 3 t_copy1
+SAVE 4 t_copy2
+FIN
+
+

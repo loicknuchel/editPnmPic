@@ -1,0 +1,11 @@
+LOAD 1 image1.pgm
+LOAD 2 image1.pgm
+LOAD 1 image0.pbm
+LOAD
+LOAD a image0.pbm
+LOAD 3 g
+LOAD 100 image2.ppm
+LOAD 4 image0.pgm
+LOAD 2 image0.pbm 5
+FIN
+

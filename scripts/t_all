@@ -1,0 +1,95 @@
+LOAD 1 image0.pbm
+LOAD 2 image1.pgm
+LOAD 3 image2.ppm
+LOAD 4 image3.pnm
+
+
+# creation de la premiere image
+CREATE 5 1
+COPY 5 1
+FRAME 5 1 1 l(5) h(5) 255 0 0
+FRAME 5 3 3 l(5)-2 h(5)-2 255 0 0
+FRAME 5 5 5 l(5)-4 h(5)-4 255 0 0
+FRAME 5 7 7 l(5)-6 h(5)-6 255 0 0
+CREATE 6 4
+COPY 6 4
+FILTRE 6 -sobel
+CUT 6 100 1 l(6) h(6)
+CREATE 7 3
+COPY 7 3
+PASTE 7 1 1 5
+PASTE 7 l(7)-l(6) 1 6 -tr 50
+SAVE 7 t_all1
+CLOSE 5
+CLOSE 6
+CLOSE 7
+
+
+# creation de la second image
+CREATE 5 4
+COPY 5 4
+CUT 5 1 1 l(4) h(4)/3
+FILTRE 5 -med 4
+CREATE 6 4
+COPY 6 4
+CUT 6 1 h(4)/3 l(4) 2*h(4)/3
+INV 6
+CREATE 7 4
+COPY 7 4
+CUT 7 1 2*h(4)/3 l(4) h(4)
+FILTRE 7 -mdif
+ADD 5 bas 6
+ADD 5 bas 7
+SAVE 5 t_all2
+CLOSE 5
+CLOSE 6
+CLOSE 7
+
+
+# creation de la troisieme image
+CREATE 5 4
+COPY 5 4
+CUT 5 110 20 l(5)-20 h(5)-130
+FILTRE 5 -prewitt
+CREATE 6 2
+COPY 6 2
+CUT 6 l(6)/2 1 l(6)-50 h(6)
+FILTRE 6 -roberts
+CREATE 7 3
+COPY 7 3
+CUT 7 1 1 l(3)/2+80 h(3)
+CREATE 8 7
+COPY 8 7
+CUT 8 1 1 l(8) h(8)/2
+CUT 7 1 h(7)/2 l(7) h(7)
+KEEP 7 R
+KEEP 8 V
+ADD 7 haut 8
+CLOSE 8
+CREATE 8 3
+COPY 8 3
+CUT 8 l(3)/2+80 1 l(3) h(3)
+KEEP 8 R pix
+ADD 7 droite 8
+CLOSE 8
+CREATE 8 5
+COPY 8 5
+CUT 5 1 1 l(5) h(5)/2
+CUT 8 1 h(8)/2 l(8) h(8)
+PASTE 7 1 1 6 -tr 80
+PASTE 7 l(7)-l(5) 1 5
+PASTE 7 l(7)-l(8) h(7)-h(8) 8
+SAVE 7 t_all3
+
+
+CLOSE 1
+CLOSE 2
+CLOSE 3
+CLOSE 4
+CLOSE 5
+CLOSE 6
+CLOSE 7
+CLOSE 8
+FIN
+
+

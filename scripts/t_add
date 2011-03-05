@@ -1,0 +1,21 @@
+LOAD 1 image0.pbm
+LOAD 2 image1.pgm
+LOAD 3 image2.ppm
+LOAD 4 image3.pnm
+CREATE 5 1 1
+CREATE 6 1 1
+ADD 5 droite 1
+ADD 5 droite 2
+ADD 6 gauche 4
+ADD 6 gauche 3
+ADD 6 haut 1
+SAVE 5 test1.pnm
+SAVE 6 test2.pnm
+CLOSE 1
+CLOSE 2
+CLOSE 3
+CLOSE 4
+CLOSE 5
+CLOSE 6
+FIN
+

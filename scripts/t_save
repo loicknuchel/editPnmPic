@@ -1,0 +1,20 @@
+LOAD 1 image0.pbm
+CREATE 2 1
+CREATE 3 2
+SAVE 2 a
+SAVE 1 a
+SAVE 3 a
+SAVE 1 bb 0
+SAVE 2 bc 4
+SAVE 3 bd 1
+SAVE a
+SAVE
+SAVE 2 5
+SAVE 3 oi
+SAVE 2 lo 2 3
+SAVE 4
+FIN
+
+
+
+
